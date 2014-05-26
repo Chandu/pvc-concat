@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9E3F8BA1-B970-46AA-8050-130666F2E1BD}</ProjectGuid>
+    <ProjectGuid>{61CEFBF5-86F5-4434-A70A-516C69D7DF82}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PvcConcat.Specs</RootNamespace>
-    <AssemblyName>PvcConcat.Specs</AssemblyName>
+    <RootNamespace>PvcConcat</RootNamespace>
+    <AssemblyName>PvcConcat</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -33,20 +33,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Machine.Specifications, Version=0.8.2.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Pvc.Core, Version=0.0.1.7, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Machine.Specifications.0.8.2\lib\net45\Machine.Specifications.dll</HintPath>
-    </Reference>
-    <Reference Include="Machine.Specifications.Clr4, Version=0.8.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Machine.Specifications.0.8.2\lib\net45\Machine.Specifications.Clr4.dll</HintPath>
-    </Reference>
-    <Reference Include="Machine.Specifications.Should, Version=0.7.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Machine.Specifications.Should.0.7.2\lib\net45\Machine.Specifications.Should.dll</HintPath>
-    </Reference>
-    <Reference Include="Pvc.Core">
-      <HintPath>..\..\packages\Pvc.Core.0.0.1.7\lib\net45\Pvc.Core.dll</HintPath>
+      <HintPath>..\packages\Pvc.Core.0.0.1.7\lib\net45\Pvc.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -57,14 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PvcConcatSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\PvcConcat\PvcConcat.csproj">
-      <Project>{61cefbf5-86f5-4434-a70a-516c69d7df82}</Project>
-      <Name>PvcConcat</Name>
-    </ProjectReference>
+    <Compile Include="PvcConcat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
