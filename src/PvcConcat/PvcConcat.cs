@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using System.Text;
+using System.Linq;
 using PvcCore;
 using PvcPlugins;
 
@@ -17,18 +17,30 @@ namespace PvcConcat
 
 		public override IEnumerable<PvcStream> Execute(IEnumerable<PvcStream> inputStreams)
 		{
-			var streamContent = new StringBuilder();
+			//Not using .Any() to avoid multiple enumeration and to avoid converting the enumerable to list. Using good old bool set check.
+			var hasAnyStream = false;
+				
+			var copyToStream = new MemoryStream();
+
 			foreach (var inputStream in inputStreams)
 			{
-				streamContent.Append(inputStream.ToString());
+				hasAnyStream = true;
+				inputStream.Position = 0;
+				inputStream.CopyTo(copyToStream);
 			}
-			var finalStream = PvcUtil.StringToStream(streamContent.ToString(), _resultName);
-			finalStream.Position = 0;
-			return new[]
+			if (!hasAnyStream)
 			{
-				finalStream
+				return Enumerable.Empty<PvcStream>();
+			}
+			var returnStream = new PvcStream(() => copyToStream)
+			{
+				Position = 0
 			};
 
+			return new[]
+			{
+				returnStream.As(_resultName)
+			};
 		}
 	}
 }
