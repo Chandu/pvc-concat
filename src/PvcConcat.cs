@@ -2,9 +2,8 @@
 using System.IO;
 using System.Linq;
 using PvcCore;
-using PvcPlugins;
 
-namespace PvcConcat
+namespace PvcPlugins
 {
 	public class PvcConcat : PvcPlugin
 	{

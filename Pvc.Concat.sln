@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PvcConcat", "src\PvcConcat.csproj", "{61CEFBF5-86F5-4434-A70A-516C69D7DF82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pvc.Concat", "src\Pvc.Concat.csproj", "{61CEFBF5-86F5-4434-A70A-516C69D7DF82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PvcConcat.Specs", "specs\PvcConcat.Specs.csproj", "{9E3F8BA1-B970-46AA-8050-130666F2E1BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pvc.Concat.Specs", "specs\Pvc.Concat.Specs.csproj", "{9E3F8BA1-B970-46AA-8050-130666F2E1BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

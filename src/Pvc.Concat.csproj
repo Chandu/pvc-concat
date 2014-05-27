@@ -7,8 +7,8 @@
     <ProjectGuid>{61CEFBF5-86F5-4434-A70A-516C69D7DF82}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PvcConcat</RootNamespace>
-    <AssemblyName>PvcConcat</AssemblyName>
+    <RootNamespace>PvcPlugins</RootNamespace>
+    <AssemblyName>Pvc.Concat</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

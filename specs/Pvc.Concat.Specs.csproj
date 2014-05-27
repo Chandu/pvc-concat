@@ -7,8 +7,8 @@
     <ProjectGuid>{9E3F8BA1-B970-46AA-8050-130666F2E1BD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PvcConcat.Specs</RootNamespace>
-    <AssemblyName>PvcConcat.Specs</AssemblyName>
+    <RootNamespace>PvcPlugins.Concat.Specs</RootNamespace>
+    <AssemblyName>Pvc.Concat.Specs</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -59,13 +59,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\PvcConcat.csproj">
-      <Project>{61cefbf5-86f5-4434-a70a-516c69d7df82}</Project>
-      <Name>PvcConcat</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\src\Pvc.Concat.csproj">
+      <Project>{61cefbf5-86f5-4434-a70a-516c69d7df82}</Project>
+      <Name>Pvc.Concat</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

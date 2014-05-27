@@ -5,7 +5,9 @@ using System.Linq;
 using Machine.Specifications;
 using PvcCore;
 
-namespace PvcConcat.Specs
+// ReSharper disable CheckNamespace
+namespace PvcPlugins.Concat.Specs
+// ReSharper restore CheckNamespace
 {
 	[Subject(typeof(PvcConcat), ".Execute")]
 	internal class PvcConcatSpecs
